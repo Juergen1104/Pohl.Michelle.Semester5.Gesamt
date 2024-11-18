@@ -4,23 +4,23 @@ import java.util.Random;
 public class TestNumbers {
 
     /* Aufgabenteil (a) */
-    public static void print(java.lang.Number[] numbers) {
+    public static void print(Number[] numberjps) {
 
-        for (java.lang.Number number : numbers) {
-            System.out.print(number + " ");
+        for (Number numberjp : numberjps) {
+            System.out.print(numberjp + " ");
         }
         System.out.println();
     }
 
     /* Aufgabenteil (b) */
-    public static void sort(java.lang.Number[] numbers) {
-        int n = numbers.length;
+    public static void sort(Number[] numberjps) {
+        int n = numberjps.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
-                if (numbers[j].compareTo(numbers[j + 1]) > 0) {
-                    java.lang.Number temp = numbers[j];
-                    numbers[j] = numbers[j + 1];
-                    numbers[j + 1] = temp;
+                if (numberjps[j].compareTo(numberjps[j + 1]) > 0) {
+                    Number temp = numberjps[j];
+                    numberjps[j] = numberjps[j + 1];
+                    numberjps[j + 1] = temp;
                 }
             }
         }
@@ -28,7 +28,7 @@ public class TestNumbers {
 
     public static void main(String[] args) {
         int k = 10;
-        java.lang.Number[] brueche = new java.lang.Number[k];
+        Number[] brueche = new Number[k];
 
         /* Aufgabenteil (d) */
 

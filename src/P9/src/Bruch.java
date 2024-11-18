@@ -1,6 +1,6 @@
 package P9.src;
 
-public class Bruch implements java.lang.Number {
+public class Bruch implements Number {
     private int zaehler, nenner;
 
     public Bruch(int z, int n) {
@@ -19,20 +19,20 @@ public class Bruch implements java.lang.Number {
     }
 
     @Override
-    public boolean equals(java.lang.Number n2) {
+    public boolean equals(Number n2) {
         return false;
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (!(obj instanceof java.lang.Number)) return false;
-        java.lang.Number other = (java.lang.Number) obj;
+        if (!(obj instanceof Number)) return false;
+        Number other = (Number) obj;
         return Double.compare(this.toDouble(), other.toDouble()) == 0;
     }
 
     @Override
-    public int compareTo(java.lang.Number other) {
+    public int compareTo(Number other) {
         return Double.compare(this.toDouble(), other.toDouble());
     }
 }

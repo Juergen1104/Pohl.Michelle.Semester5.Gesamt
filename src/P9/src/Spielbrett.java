@@ -8,7 +8,7 @@ public abstract class Spielbrett {
     public Spielbrett(int anzSpalten, int anzZeilen){
 	this.anzZeilen = anzZeilen;
 	this.anzSpalten = anzSpalten;
-	belegung = new  Spielstein[anzZeilen][anzSpalten];
+	belegung = new Spielstein[anzZeilen][anzSpalten];
     }
 
     /* Ausgabe des Spielbretts mit den Spielsteinen in der 
